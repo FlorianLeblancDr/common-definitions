@@ -1,0 +1,59 @@
+- Consumption:
+    description: total consumption of all goods, by all consumers in a region
+    unit: {Currency/yr}
+    min: 0
+- GDP|MER:
+    definition: GDP converted to USD at market exchange rate (MER)
+    unit: billion USD_2010/yr
+- GDP|PPP:
+    definition: GDP converted to USD using purchasing power parity (PPP)
+    unit: billion USD_2010/yr$
+- Value Added|Agriculture:
+    description: value added of the agricultural sector
+    unit: billion US$2010/yr
+- Value Added|Commercial:
+    description: value added of the commercial sector
+    unit: billion US$2010/yr
+- Value Added|Industry:
+    description: value added of the industry sector
+    unit: billion US$2010/yr
+- Capital Formation:
+    description: net additions to the physical capital stock
+    unit: billion US$2010/yr
+- Expenditure|Government:
+    description: total government expenditure
+    unit: billion US$2010/yr
+- Expenditure|Household:
+    description: Total household expenditure
+    unit: billion US$2010/yr
+- Export:
+    description: total exports measured in monetary quantities
+    unit: {Currency/yr}
+    min: 0
+- Import:
+    description: total imports measured in monetary quantities
+    unit: {Currency/yr}
+    min: 0
+- Employment:
+    description: Number of employed inhabitants (based on ILO classification)
+    unit: million
+    min: 0
+    check-aggregate: true
+    components:
+      - By sectors:
+         - Employment|{sector}
+- Unemployment:
+    description: Number of unemployed inhabitants (based on ILO classification)
+    unit: million
+    min: 0
+- Population:
+    description: Total population
+    unit: million
+- Price|Carbon:
+    description: Price of carbon
+    drop_negative_weights: false
+    unit: US$2010/t CO2
+    weight: Emissions|CO2
+- Revenue|government:
+    description: government revenue
+    unit: billion US$2010/yr
