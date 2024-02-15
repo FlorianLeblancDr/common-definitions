@@ -1,7 +1,3 @@
-- Consumption:
-    description: total consumption of all goods, by all consumers in a region
-    unit: {Currency/yr}
-    min: 0
 - Consumption|{Deciles}:
     definition: Share of total consumption accruing to the {Deciles}
     unit: %

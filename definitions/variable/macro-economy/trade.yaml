@@ -1,13 +1,5 @@
-- Export:
-    description: total exports measured in monetary quantities
-    unit: {Currency/yr}
-    min: 0
 - Export|{Trade}:
     description: export of {Trade} measured in monetary units
-    unit: {Currency/yr}
-    min: 0
-- Import:
-    description: total imports measured in monetary quantities
     unit: {Currency/yr}
     min: 0
 - Import|{Trade}:
